@@ -13,16 +13,13 @@ public class Prob4 {
 		int[] sum = new int[10];
 		for (int i = 0; i < 10; i++) {
 			if (money >= won[i]) {
-
 				sum[i] = money / won[i];
 				money -= won[i] * sum[i];
-				System.out.println(won[i] + "원 : " + sum[i] + "개");
 			}
 			else{
-				sum[i]=0;
-				System.out.println(won[i] + "원 : " + sum[i] + "개");
-				
+				sum[i]=0;	
 			}
+			System.out.println(won[i] + "원 : " + sum[i] + "개");
 		}
 
 		sc.close();
